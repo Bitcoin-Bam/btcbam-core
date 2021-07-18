@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.17.6
+Name=Bitcoinbam Core
+Comment=Connect to the Bitcoinbam P2P Network
+Exec=bitcoinbam-qt %u
+Terminal=false
+Type=Application
+Icon=bitcoinbam128
+MimeType=x-scheme-handler/bitcoinbam;
+Categories=Network;
+StartupWMClass=Bitcoinbam-qt
+Name[en_US]=bitcoinbam-qt

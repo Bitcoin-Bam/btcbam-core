@@ -1,0 +1,6 @@
+usr/local/bin/bitcoinbam-qt usr/bin
+share/pixmaps/bitcoinbam32.xpm usr/share/pixmaps
+share/pixmaps/bitcoinbam16.xpm usr/share/pixmaps
+share/pixmaps/bitcoinbam128.png usr/share/pixmaps
+debian/bitcoinbam-qt.desktop usr/share/applications
+debian/bitcoinbam-qt.protocol usr/share/kde4/services/

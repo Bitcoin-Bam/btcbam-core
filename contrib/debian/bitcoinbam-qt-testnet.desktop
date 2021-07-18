@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.17.6
+Name=Bitcoinbam Core Testnet
+Comment=Connect to the Bitcoinbam P2P Network Testnet
+Exec=bitcoinbam-qt -testnet %u
+Terminal=false
+Type=Application
+Icon=bitcoinbamtestnet128
+MimeType=x-scheme-handler/bitcoinbam;
+Categories=Network;
+StartupWMClass=Bitcoinbam-qt-testnet
+Name[en_US]=bitcoinbam-qt-testnet
