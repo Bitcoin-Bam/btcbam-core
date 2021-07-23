@@ -92,7 +92,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(const char* pszTimestamp, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const CScript genesisOutputScript = CScript() << ParseHex("040d61d8653448c98731ee5fffd303c15e71ec2057b77f11ab3601979728cdaff2d68afbba14e4fa0bc44f2072b0b23ef63717f8cdfbe58dcd33f32b6afe98741a") << OP_CHECKSIG;
+    const CScript genesisOutputScript = CScript() << ParseHex("042557932e1c9d7a41a4a8038791326ecd9e79ef8cda9bab57c967cdf89429a41fca748900d65d3eaa7bcdb07c3b40dabc1d392df94b0a63082078f19488b88369") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -103,9 +103,9 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.BIP16Exception = uint256S("0x003eb8631103ee51850a3fa4c7979ff87ac0704d488136a160a315b12239c672");
+        consensus.BIP16Exception = uint256S("0x001dc4c7cfc31ec2f30ecf9573c4418cd89122ed6d51dfe20fd82e6b74719c26");
         consensus.BIP34Height = 1;
-        consensus.BIP34Hash = uint256S("0x003eb8631103ee51850a3fa4c7979ff87ac0704d488136a160a315b12239c672");
+        consensus.BIP34Hash = uint256S("0x001dc4c7cfc31ec2f30ecf9573c4418cd89122ed6d51dfe20fd82e6b74719c26");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.CSVHeight = 1;
@@ -127,10 +127,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000019c4d4b45c60f");
+        consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x5f6bfa7c08c830cf02c71aa446ccf81099e947a89b6f9c58ca2988238c8964ed"); //block 5440
+        consensus.defaultAssumeValid = uint256S("0x00"); //block 5440
 
         // Supply params
         consensus.devFund = 15000000 * COIN;
@@ -152,12 +152,12 @@ public:
         m_assumed_blockchain_size = 0;
         m_assumed_chain_state_size = 0;
 
-        const char* pszTimestamp = "ESA’s Gaia Mission Releases Data on More Than 1.8 Billion Stars | Dec 3, 2020 Sci News";
+        const char* pszTimestamp = "Malaysia’s new Covid-19 cases jump to 13,034 on July 22 | The Edge";
 
-        genesis = CreateGenesisBlock(pszTimestamp, 1607119130, 172, 0x1f3fffff, 1, consensus.baseReward);
-        consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x003eb8631103ee51850a3fa4c7979ff87ac0704d488136a160a315b12239c672"));
-        assert(genesis.hashMerkleRoot == uint256S("0x4ec80bf4126050d9730bd17a88f3ad392736ed82fed82c03ee125bf686ef5020"));
+        genesis = CreateGenesisBlock(pszTimestamp, 1626363636, 261, 0x1f3fffff, 1, consensus.baseReward);
+        consensus.hashGenesisBlock = genesis.GetHash();  
+        assert(consensus.hashGenesisBlock == uint256S("0x001dc4c7cfc31ec2f30ecf9573c4418cd89122ed6d51dfe20fd82e6b74719c26"));
+        assert(genesis.hashMerkleRoot == uint256S("0xa9677257ffb2fd8541d7c10a89a2d6fac7740ee2692b8f39d4c0371e2e204941"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -179,15 +179,14 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("003eb8631103ee51850a3fa4c7979ff87ac0704d488136a160a315b12239c672")},
-                {5000, uint256S("0026b747d10f80f8c104a7b35d4df3ac57c7067bd090792a185fb3d5e05e07f5")}, // Last POW
+                {0, uint256S("001dc4c7cfc31ec2f30ecf9573c4418cd89122ed6d51dfe20fd82e6b74719c26")},
             }
         };
         // Data as of block 0001018daf0320564a2463fafdc049fab268e33028b9c28213edfbec39d786ff (height 666).
         chainTxData = ChainTxData{
-            1626568112,
-            6074,
-            0.04
+            1626363636,
+            0,
+            0
         };
 
         consensus.nLastPOWBlock = 5000;
@@ -206,9 +205,9 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        consensus.BIP16Exception = uint256S("0x00134fa7130a897e03ca4f466491b6befe9f8f80f4d1f7bea4f9bfde542e5476");
+        consensus.BIP16Exception = uint256S("0x00");
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x00134fa7130a897e03ca4f466491b6befe9f8f80f4d1f7bea4f9bfde542e5476");
+        consensus.BIP34Hash = uint256S("0x00");
         consensus.BIP65Height = 1;
         consensus.BIP66Height = 1;
         consensus.CSVHeight = 1;
@@ -250,12 +249,12 @@ public:
         consensus.rewardEpochRate = 0.36;
         consensus.rewardEpoch = 1051920;
 
-        const char* pszTimestamp = "Curiosity Finds Deposits from Megafloods in Martian Crater | Nov 23, 2020 Sci News";
+        const char* pszTimestamp = "Malaysia’s new Covid-19 cases jump to 13,034 on July 22 | The Edge";
 
-        genesis = CreateGenesisBlock(pszTimestamp, 1606846320, 357, 0x1f3fffff, 1, consensus.baseReward);
+        genesis = CreateGenesisBlock(pszTimestamp, 1626166666, 1343, 0x1f3fffff, 1, consensus.baseReward);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00134fa7130a897e03ca4f466491b6befe9f8f80f4d1f7bea4f9bfde542e5476"));
-        assert(genesis.hashMerkleRoot == uint256S("0x2f46c711180a70726191bae10bc6dbc3ac7ac66dadcf55bbfdf16554678634a4"));
+        assert(consensus.hashGenesisBlock == uint256S("0x002702899b7987b6f78613e7ad1ef25fcf270ee240fa6f830b71b46735be19c6"));
+        assert(genesis.hashMerkleRoot == uint256S("0xa9677257ffb2fd8541d7c10a89a2d6fac7740ee2692b8f39d4c0371e2e204941"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -278,7 +277,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("00134fa7130a897e03ca4f466491b6befe9f8f80f4d1f7bea4f9bfde542e5476")},
+                {0, uint256S("002702899b7987b6f78613e7ad1ef25fcf270ee240fa6f830b71b46735be19c6")},
             }
         };
 
@@ -350,12 +349,12 @@ public:
 
         UpdateActivationParametersFromArgs(args);
 
-        const char* pszTimestamp = "Curiosity Finds Deposits from Megafloods in Martian Crater | Nov 23, 2020 Sci News";
-
-        genesis = CreateGenesisBlock(pszTimestamp, 1606093323, 2, 0x207fffff, 1, consensus.baseReward);
+        const char* pszTimestamp = "Malaysia’s new Covid-19 cases jump to 13,034 on July 22 | The Edge";
+        genesis = CreateGenesisBlock(pszTimestamp, 1626116666, 0, 0x207fffff, 1, consensus.baseReward);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x7b39aca1435510d5ea5b1afc5dd8c709cc390b76599e89788db4228354039ad1"));
-        assert(genesis.hashMerkleRoot == uint256S("0x324ad490f7b20b35dbad09f32837e605e37717b949fbeec5a9abd1c7ff42e3fe"));
+
+        assert(consensus.hashGenesisBlock == uint256S("0x3f3786f14f790e0da2dc227ee1e3cd5a1b9084462cbdee109d553c1eb9c84a9d"));
+        assert(genesis.hashMerkleRoot == uint256S("0x3c3bdd83c77a52b0aa023abe525838b0a26678930a9a1b84125e3a79652491eb"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -367,7 +366,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("3bf7003e4975f04bc3cb0641b1ea27e48a862bae897a853bdc774431b602a854")},
+                {0, uint256S("3f3786f14f790e0da2dc227ee1e3cd5a1b9084462cbdee109d553c1eb9c84a9d")},
             }
         };
 
@@ -569,3 +568,4 @@ void UpdateDelegationsAddress(const uint160& address)
 {
     const_cast<CChainParams*>(globalChainParams.get())->UpdateDelegationsAddress(address);
 }
+
