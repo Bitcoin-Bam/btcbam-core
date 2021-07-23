@@ -194,7 +194,7 @@ public:
         consensus.nCheckpointSpan = COINBASE_MATURITY;
         consensus.delegationsAddress = uint160(ParseHex("0000000000000000000000000000000000000086")); // Delegations contract for offline staking
 
-        devFundAddress = "BZsLdJaLFZAV12ircxVprKUQ66xg3GVDKk";
+        devFundAddress = "BgmeZHdgV86dXjVhW442m2QatZmBWBZ4F9";
     }
 };
 
