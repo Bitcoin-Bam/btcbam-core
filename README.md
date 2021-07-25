@@ -22,23 +22,22 @@ These are some resources that might be helpful in understanding Bitcoinbam.
 Basic usage resources:
 
 * [User guide](https://docs.btcbam.com/en/)
-* [Bitcoinbam-Qt Wallet Tutorial](https://github.com/bitcoinbamproject/documents/tree/master/en/Bitcoinbam-Wallet-Tutorial#bitcoinbam-qt-wallet-tutorial)
-* [Bitcoinbam staking tutorial](https://github.com/bitcoinbamproject/documents/tree/master/en/How-to-Stake-with-Bitcoinbam)
-* [Bitcoinbam tutorial on Raspberry Pi](https://github.com/bitcoinbamproject/documents/tree/master/en/Bitcoinbam-on-Raspberry-Pi)
-* [Running Bitcoinbam on Amazon AWS using Bitcoinbam AMI](https://github.com/bitcoinbamproject/documents/tree/master/en/Bitcoinbam-AWS)
-* [Encrypting and unlocking wallet](https://github.com/bitcoinbamproject/documents/tree/master/en/Encrypt-and-Unlock-Bitcoinbam-Wallet)
-* [Testnet guide](https://github.com/bitcoinbamproject/documents/blob/master/en/Testnet-User-Guide.md)
-* [Block explorer](https://bitcoinbam.info), [Older explorer](https://explorer.www.btcbam.com)
+* [Bitcoinbam-Qt Wallet Tutorial](https://github.com/Bitcoin-Bam/documents/tree/master/en/Bitcoinbam-Wallet-Tutorial#bitcoinbam-qt-wallet-tutorial)
+* [Bitcoinbam staking tutorial](https://github.com/Bitcoin-Bam/documents/tree/master/en/How-to-Stake-with-Bitcoinbam)
+* [Bitcoinbam tutorial on Raspberry Pi](https://github.com/Bitcoin-Bam/documents/tree/master/en/Bitcoinbam-on-Raspberry-Pi)
+* [Running Bitcoinbam on Amazon AWS using Bitcoinbam AMI](https://github.com/Bitcoin-Bam/documents/tree/master/en/Bitcoinbam-AWS)
+* [Encrypting and unlocking wallet](https://github.com/Bitcoin-Bam/documents/tree/master/en/Encrypt-and-Unlock-Bitcoinbam-Wallet)
+* [Testnet guide](https://github.com/Bitcoin-Bam/documents/blob/master/en/Testnet-User-Guide.md)
+* [Block explorer](https://explorer2.btcbam.com)
 
 
 Development resources:
 
 * [Bitcoinbam Book - A Developer's Guide To BTCBAM](http://book.btcbam.com/en/)
-* [Bitcoinbam contract usage](https://docs.btcbam.com/en/QRC20-Token-Introduce.html)
+* [Bitcoinbam contract usage](https://docs.btcbam.com/en/BRC20-Token-Introduce.html)
 * [Deploying a custom token to Bitcoinbam](https://blog.www.btcbam.com/bitcoinbam-custom-token-walkthrough-467d725fa27d)
-* [BitcoinbamJS document](https://bitcoinbamproject.github.io/bitcoinbamjs-doc/)
+* [BitcoinbamJS document](https://Bitcoin-Bam.github.io/bitcoinbamjs-doc/)
 * [Smart contract ICO example](http://book.btcbam.com/en/part3/ico.htm)
-* [Early example faucet contract](http://earlz.net/view/2017/06/30/2144/the-bitcoinbam-sparknet-faucet)
 
 General Info about Bitcoinbam:
 
