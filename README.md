@@ -50,17 +50,17 @@ Developer's Tools
 -----------------
 
 * Smart contract deployment tool
-  * https://github.com/bitcoinbamproject/solar
+  * https://github.com/Bitcoin-Bam/solar
 * DApp JavaScript Library
-  * https://github.com/bitcoinbamproject/bitcoinbamjs
+  * https://github.com/Bitcoin-Bam/bitcoinbamjs
 * A toolkit for building bitcoinbam light wallets
-  * https://github.com/bitcoinbamproject/bitcoinbamjs-wallet
+  * https://github.com/Bitcoin-Bam/bitcoinbamjs-wallet
 * CORS bitcoinbamd RPC proxy for DApp
-  * https://github.com/bitcoinbamproject/bitcoinbamportal
+  * https://github.com/Bitcoin-Bam/bitcoinbamportal
 * Docker images for running bitcoinbam services
-  * https://github.com/bitcoinbamproject/bitcoinbam-docker
+  * https://github.com/Bitcoin-Bam/bitcoinbam-docker
 * bitcoinbam.info API that powers the block explorer and the BTCBAM Web wallet
-  * https://github.com/bitcoinbamproject/bitcoinbaminfo-api#bitcoinbaminfo-api-documentation
+  * https://github.com/Bitcoin-Bam/bitcoinbaminfo-api#bitcoinbaminfo-api-documentation
 
 
 What is Bitcoinbam Core?
