@@ -14,53 +14,9 @@ The major features of the Bitcoinbam network include:
 
 Note: Bitcoinbam Core is considered beta software. We make no warranties or guarantees of its security or stability.
 
-Bitcoinbam Documentation and Usage Resources
----------------
-
-These are some resources that might be helpful in understanding Bitcoinbam.
-
-Basic usage resources:
-
-* [User guide](https://docs.btcbam.com/en/)
-* [Bitcoinbam-Qt Wallet Tutorial](https://github.com/Bitcoin-Bam/documents/tree/master/en/Bitcoinbam-Wallet-Tutorial#bitcoinbam-qt-wallet-tutorial)
-* [Bitcoinbam staking tutorial](https://github.com/Bitcoin-Bam/documents/tree/master/en/How-to-Stake-with-Bitcoinbam)
-* [Bitcoinbam tutorial on Raspberry Pi](https://github.com/Bitcoin-Bam/documents/tree/master/en/Bitcoinbam-on-Raspberry-Pi)
-* [Running Bitcoinbam on Amazon AWS using Bitcoinbam AMI](https://github.com/Bitcoin-Bam/documents/tree/master/en/Bitcoinbam-AWS)
-* [Encrypting and unlocking wallet](https://github.com/Bitcoin-Bam/documents/tree/master/en/Encrypt-and-Unlock-Bitcoinbam-Wallet)
-* [Testnet guide](https://github.com/Bitcoin-Bam/documents/blob/master/en/Testnet-User-Guide.md)
-* [Block explorer](https://explorer2.btcbam.com)
 
 
-Development resources:
 
-* [Bitcoinbam Book - A Developer's Guide To BTCBAM](http://book.btcbam.com/en/)
-* [Bitcoinbam contract usage](https://docs.btcbam.com/en/BRC20-Token-Introduce.html)
-* [Deploying a custom token to Bitcoinbam](https://blog.www.btcbam.com/bitcoinbam-custom-token-walkthrough-467d725fa27d)
-* [BitcoinbamJS document](https://Bitcoin-Bam.github.io/bitcoinbamjs-doc/)
-* [Smart contract ICO example](http://book.btcbam.com/en/part3/ico.htm)
-
-General Info about Bitcoinbam:
-
-* [CIRCLERESEARCH Bitcoinbam Primer](https://www.circle.com/marketing/pdfs/research/circle-research-bitcoinbam.pdf)
-* [Bitcoinbam's PoS vs CASPER](https://www.reddit.com/r/Bitcoinbam/comments/788oa5/bitcoinbams_pos_vs_casper_and_the_nothingatstake_problem/)
-* [Technical article explaining Bitcoinbam's PoS model in depth](http://earlz.net/view/2017/07/27/1904/the-missing-explanation-of-proof-of-stake-version)
-
-
-Developer's Tools
------------------
-
-* Smart contract deployment tool
-  * https://github.com/Bitcoin-Bam/solar
-* DApp JavaScript Library
-  * https://github.com/Bitcoin-Bam/bitcoinbamjs
-* A toolkit for building bitcoinbam light wallets
-  * https://github.com/Bitcoin-Bam/bitcoinbamjs-wallet
-* CORS bitcoinbamd RPC proxy for DApp
-  * https://github.com/Bitcoin-Bam/bitcoinbamportal
-* Docker images for running bitcoinbam services
-  * https://github.com/Bitcoin-Bam/bitcoinbam-docker
-* bitcoinbam.info API that powers the block explorer and the BTCBAM Web wallet
-  * https://github.com/Bitcoin-Bam/bitcoinbaminfo-api#bitcoinbaminfo-api-documentation
 
 
 What is Bitcoinbam Core?
@@ -86,47 +42,18 @@ Alternative Wallets
 
 Bitcoinbam Core uses a full node model, and thus requires downloading the entire blockchain. If you do not need the entire blockchain, and do not intend on developing smart contracts, it may be more ideal to use an alternative wallet such as one of our light wallets that can be synchronized in a matter of seconds. 
 
-### Bitcoinbam Web Wallet
-
-A browser wallet that supports the Ledger hardware wallet, offline cold wallet, and restoration from mobile wallets.
-
-Web site https://bitcoinbamwallet.org
-
-User documentation https://github.com/bitcoinbamproject/documents/tree/master/en/BTCBAM-WebWallet-usage
-
-### Bitcoinbam Electrum
-
-A light wallet that supports the Ledger and Trezor hardware wallets and is based on the well-known Electrum wallet software. 
-
-Download: https://github.com/bitcoinbamproject/bitcoinbam-electrum/releases
-
-### iOS and Android Wallets
-
-These wallets run on mobile devices and synchronize quickly. 
-
-Android Download: https://play.google.com/store/apps/details?id=org.bitcoinbam.newwallet
-
-iOS Download: https://github.com/bitcoinbamproject/bitcoinbam-ios (open source, deprecated)
-
-### Ledger Chrome Wallet
-
-This light wallet runs in your Chrome browser as a browser extension. This wallet requires a Ledger device to use.
-
-How to install: https://ledger.zendesk.com/hc/en-us/articles/115003776913-How-to-install-and-use-Bitcoinbam-with-Ledger
 
 
 ### Community Resources
 
 Make sure to check out these resources as well for more information and to keep up to date with all the latest news about Bitcoinbam. At least 1 developer is always around, so if you're developing on Bitcoinbam and need help, we'd love to welcome you to our community.
 
-*	@Bitcoinbam on Twitter https://twitter.com/bitcoinbam
-* Bitcoinbam blog https://blog.www.btcbam.com/
-*	Bitcoinbam Telegram Group https://t.me/bitcoinbamofficial, other languages available
-* Bitcoinbam Discord https://discordapp.com/invite/wRfmkQ9
-*	/r/Bitcoinbam on Reddit https://www.reddit.com/r/Bitcoinbam/
+*	@Bitcoinbam on Twitter https://twitter.com/btcbamg
+* Bitcoinbam medium https://btcbamofficial.medium.com/
+* Bitcoinbam Telegram Group https://t.me/btcbamofficialaccount
 *	www.btcbam.com https://www.btcbam.com
-*	Bitcoinbam on Facebook https://www.facebook.com/BitcoinbamOfficial/
-*	Bitcoinbam Forum https://forum.www.btcbam.com
+*	Bitcoinbam on Facebook https://www.facebook.com/BtcbamGlobal/
+
 
 ### Bitcoinbam Smart Contract Limitations
 
@@ -142,7 +69,7 @@ Make sure to check out these resources as well for more information and to keep 
 
 ### Validate and Reproduce Binaries
 
-Bitcoinbam uses a tool called Gitian to make reproducible builds that can be verified by anyone. Instructions on setting up a Gitian VM and building Bitcoinbam are provided in [Gitan Building](https://github.com/bitcoinbamproject/bitcoinbam/blob/master/doc/gitian-building.md)
+Bitcoinbam uses a tool called Gitian to make reproducible builds that can be verified by anyone. 
 
 ### Build on Ubuntu
 
@@ -158,7 +85,7 @@ This is a quick start script for compiling Bitcoinbam on Ubuntu
     # If you want to build the Qt GUI:
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler qrencode
 
-    git clone https://github.com/bitcoinbamproject/bitcoinbam --recursive
+    git clone https://github.com/Bitcoin-Bam/btcbam-core --recursive
     cd bitcoinbam
 
     # Note autogen will prompt to install some more dependencies if needed
@@ -168,7 +95,7 @@ This is a quick start script for compiling Bitcoinbam on Ubuntu
     
 ### Build on CentOS
 
-Here is a brief description for compiling Bitcoinbam on CentOS, for more details please refer to [the specific document](https://github.com/bitcoinbamproject/bitcoinbam/blob/master/doc/build-unix.md)
+
 
     # Compiling boost manually
     sudo yum install python-devel bzip2-devel
@@ -188,7 +115,7 @@ Here is a brief description for compiling Bitcoinbam on CentOS, for more details
     sudo yum install qt5-qttools-devel protobuf-devel qrencode-devel
     
     # Building Bitcoinbam
-    git clone --recursive https://github.com/bitcoinbamproject/bitcoinbam.git
+    git clone --recursive https://github.com/Bitcoin-Bam/btcbam-core
     cd bitcoinbam
     ./autogen.sh
     ./configure
@@ -219,7 +146,7 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
 1. Clone the bitcoinbam source code and cd into `bitcoinbam`
 
-        git clone --recursive https://github.com/bitcoinbamproject/bitcoinbam.git
+        git clone --recursive https://github.com/Bitcoin-Bam/btcbam-core
         cd bitcoinbam
 
 2.  Build bitcoinbam-core:
@@ -250,10 +177,10 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/bitcoinbamproject/bitcoinbam/tags) are created
+completely stable. Tags  are created
 regularly to indicate new official, stable release versions of Bitcoinbam.
 
-The contribution workflow is described in [CONTRIBUTING.md](https://github.com/bitcoinbamproject/bitcoinbam/blob/master/CONTRIBUTING.md).
+The contribution workflow is described in CONTRIBUTING.md
 
 
 Testing
